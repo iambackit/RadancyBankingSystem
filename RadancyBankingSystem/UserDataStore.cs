@@ -12,11 +12,33 @@ public class UserDataStore
         {
             new()
             {
-                Id = 0
+                Id = 0,
+                Accounts =
+                    new List<AccountDto>
+                    {
+                        new()
+                        {
+                            Id = 0,
+                            Balance = 150
+                        },
+                        new()
+                        {
+                            Id = 1,
+                            Balance = 500
+                        }
+                    }
             },
             new()
             {
-                Id = 1
+                Id = 1,
+                Accounts = new List<AccountDto>
+                {
+                    new()
+                    {
+                        Id = 2,
+                        Balance = 5000
+                    }
+                }
             }
         };
     }
